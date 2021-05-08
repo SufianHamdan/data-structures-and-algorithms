@@ -10,9 +10,9 @@ E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
   // Solution code here...
-  arr.reduce((acc, curr) => {
-    return Math.max(curr, acc[0]);
-  }, []);
+  let result = [];
+  result = arr.reduce((acc, currValue) => Math.max(acc, currValue));
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
